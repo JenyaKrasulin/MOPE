@@ -1,3 +1,5 @@
+
+# dY це різниця між Y та Y_et та використовується для пошуку точки в якій значення Y найближче справа до Y_et 
 import numpy as np
 from random import uniform
 
