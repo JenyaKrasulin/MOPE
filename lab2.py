@@ -54,6 +54,7 @@ class Exp:
     def check_r(self) -> bool:
         for i in range(len(self.y_var)):
             for j in range(len(self.y_var)):
+# перевірка однорідності дісперсії за критерієм Романовського
                 if i > j:
                     if self.y_var[i] >= self.y_var[j]:
                         R = (abs((self.m - 2) * self.y_var[i] /
