@@ -300,5 +300,3 @@ while not flag:
         print('Fp = {} < Ft = {}'.format(round(Fp, 3), Ft))
         print('Рівняння регресії адекватно оригіналу при рівні значимості {}'.format(round(q, 2)))
         flag = True
-        
-
