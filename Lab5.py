@@ -12,7 +12,6 @@ def regression(x, b):
 
 x_range = ((0, 2), (-5, 9), (-6, 10))
 
-
 x_aver_max = sum([x[1] for x in x_range]) / 3
 x_aver_min = sum([x[0] for x in x_range]) / 3
 
