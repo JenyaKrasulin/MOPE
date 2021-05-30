@@ -117,6 +117,7 @@ class FractionalExperiment:
         return F_p
 
     def check(self):
+         start = time()
         """Проведення статистичних перевірок"""
         student = partial(t.ppf, q=1 - 0.025)
         t_student = student(df=self.f3)
@@ -160,6 +161,8 @@ class FractionalExperiment:
             print('Математична модель адекватна експериментальним даним')
         else:
             print('Математична модель не адекватна експериментальним даним')
+        end = time()
+        print('Пройшло часу: ' + str(end - start))
 
 total_sig_coefs_q = 0
 n = 100
