@@ -91,7 +91,7 @@ def set_factors_table(factors_table):
     return x_i
 
 
-def m_ij(*arrays):
+def m_ij(*arrays):  #□□□□-□□□□□□□□□□
     return numpy.average(reduce(lambda accum, el: accum * el, list(map(lambda el: numpy.array(el), arrays))))
 
 
